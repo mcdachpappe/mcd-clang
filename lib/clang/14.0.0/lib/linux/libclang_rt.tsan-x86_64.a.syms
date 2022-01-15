@@ -83,6 +83,7 @@
   __interceptor_clock_getres;
   __interceptor_clock_gettime;
   __interceptor_clock_settime;
+  __interceptor_clone;
   __interceptor_close;
   __interceptor_closedir;
   __interceptor_confstr;
@@ -161,6 +162,7 @@
   __interceptor_getgrgid_r;
   __interceptor_getgrnam;
   __interceptor_getgrnam_r;
+  __interceptor_getgrouplist;
   __interceptor_getgroups;
   __interceptor_gethostbyaddr;
   __interceptor_gethostbyaddr_r;
@@ -177,6 +179,9 @@
   __interceptor_getmntent;
   __interceptor_getmntent_r;
   __interceptor_getnameinfo;
+  __interceptor_getnetbyaddr;
+  __interceptor_getnetbyname;
+  __interceptor_getnetent;
   __interceptor_getpass;
   __interceptor_getpeername;
   __interceptor_getprotobyname;
@@ -281,6 +286,8 @@
   __interceptor_poll;
   __interceptor_popen;
   __interceptor_posix_memalign;
+  __interceptor_posix_spawn;
+  __interceptor_posix_spawnp;
   __interceptor_ppoll;
   __interceptor_prctl;
   __interceptor_pread;
@@ -315,6 +322,7 @@
   __interceptor_pthread_create;
   __interceptor_pthread_detach;
   __interceptor_pthread_exit;
+  __interceptor_pthread_getcpuclockid;
   __interceptor_pthread_getname_np;
   __interceptor_pthread_getschedparam;
   __interceptor_pthread_join;
@@ -1359,6 +1367,7 @@
   clock_getres;
   clock_gettime;
   clock_settime;
+  clone;
   close;
   closedir;
   confstr;
@@ -1437,6 +1446,7 @@
   getgrgid_r;
   getgrnam;
   getgrnam_r;
+  getgrouplist;
   getgroups;
   gethostbyaddr;
   gethostbyaddr_r;
@@ -1453,6 +1463,9 @@
   getmntent;
   getmntent_r;
   getnameinfo;
+  getnetbyaddr;
+  getnetbyname;
+  getnetent;
   getpass;
   getpeername;
   getprotobyname;
@@ -1556,6 +1569,8 @@
   poll;
   popen;
   posix_memalign;
+  posix_spawn;
+  posix_spawnp;
   ppoll;
   prctl;
   pread;
@@ -1583,6 +1598,7 @@
   pthread_create;
   pthread_detach;
   pthread_exit;
+  pthread_getcpuclockid;
   pthread_getname_np;
   pthread_getschedparam;
   pthread_join;
